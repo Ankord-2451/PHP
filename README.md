@@ -61,20 +61,6 @@ $transactions = [
         "description" => "Online course subscription",
         "merchant"    => "Udemy",
     ],
-    [
-        "id"          => 4,
-        "date"        => "2022-11-23",
-        "amount"      => 49.99,
-        "description" => "Monthly gym membership",
-        "merchant"    => "FitLife",
-    ],
-    [
-        "id"          => 5,
-        "date"        => "2023-07-04",
-        "amount"      => 320.00,
-        "description" => "Flight ticket purchase",
-        "merchant"    => "AirBooking",
-    ],
 ];
 ```
 
@@ -123,7 +109,8 @@ $transactions = [
 </table>
 ```
 
-*[Скриншот таблицы транзакций]*
+<img width="783" height="232" alt="image" src="https://github.com/user-attachments/assets/d36d55ec-3d2d-4caf-9aa9-abf1539091f1" />
+
 
 ---
 
@@ -321,7 +308,8 @@ foreach ($transactions as $t) {
 }
 ```
 
-*[Скриншот отсортированного по дате вывода]*
+<img width="1103" height="124" alt="image" src="https://github.com/user-attachments/assets/7a657876-9487-4966-a335-1cfb30a81ded" />
+
 
 #### Сортировка по сумме (по убыванию)
 
@@ -340,7 +328,8 @@ foreach ($transactions as $t) {
 }
 ```
 
-*[Скриншот отсортированного по сумме вывода]*
+<img width="764" height="182" alt="image" src="https://github.com/user-attachments/assets/fb3c9a22-595d-435a-9b1b-2b8a5b604332" />
+
 
 ---
 
@@ -450,7 +439,8 @@ if ($files === false) {
 </html>
 ```
 
-*[Скриншот галереи изображений]*
+<img width="958" height="895" alt="image" src="https://github.com/user-attachments/assets/f5a6ea7f-0a1a-44b2-a5f7-b388a61e9ea8" />
+
 
 ---
 
