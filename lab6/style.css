@@ -1,0 +1,134 @@
+/* Общие настройки */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Заголовки */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Контейнер */
+.container {
+    
+    margin: auto;
+}
+/* Форма */
+.form {
+    display: flex;
+    justify-content: center;
+}
+form {
+    width: 500px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+/* Поля */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px -10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+/* Фокус */
+input:focus, textarea:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Радио */
+input[type="radio"] {
+    width: auto;
+    margin: 5px 0 15px;
+}
+
+/* Кнопка */
+button {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Ссылки сортировки */
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    margin: 0 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Заголовки таблицы */
+th {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+}
+
+/* Ячейки */
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* Зебра */
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Hover строк */
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* Ошибки */
+.error {
+    color: red;
+    background: #ffe5e5;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Успех */
+.success {
+    color: green;
+    background: #e5ffe5;
+    padding: 10px;
+    border-radius: 8px;
+}
