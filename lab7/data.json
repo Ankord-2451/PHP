@@ -1,0 +1,22 @@
+[
+    {
+        "title": "\u043e\u043e\u043e",
+        "ingredients": "\u0432\u0430\u043f\u0440\u043e\u043b\u0434",
+        "instructions": "\u044b\u0432\u0430\u043f\u0440\u043e\u043b\u0434",
+        "category": "\u0421\u0443\u043f",
+        "prep_time": "130",
+        "difficulty": "\u0421\u0440\u0435\u0434\u043d\u0435",
+        "created_at": "2026-04-23",
+        "author": "ZZZ"
+    },
+    {
+        "title": "ttt",
+        "ingredients": "sdfghjklkjhgfd",
+        "instructions": "sdfghjkllkjhgfds",
+        "category": "\u041e\u0441\u043d\u043e\u0432\u043d\u043e\u0435",
+        "prep_time": 560,
+        "difficulty": "\u041b\u0435\u0433\u043a\u043e",
+        "created_at": "2026-04-23",
+        "author": "ZZZZ"
+    }
+]

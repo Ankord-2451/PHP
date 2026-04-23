@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% block form_title %}Форма рецепта{% endblock %}{% endblock %}
+
+{% block content %}
+  <h1>{% block form_title %}Форма рецепта{% endblock %}</h1>
+  <form method="POST" action="{% block form_action %}save.php{% endblock %}">
+    {% if isEdit %}
+      <input type="hidden" name="id" value="{{ recipeId }}">
+    {% endif %}
+
+    <label>Название:
+      <input type="text" name="title" value="{{ recipe.title|default('') }}" required minlength="3">
+    </label><br>
+
+    <label>Ингредиенты:
+      <textarea name="ingredients" required>{{ recipe.ingredients|default('') }}</textarea>
+    </label><br>
+
+    <label>Инструкция:
+      <textarea name="instructions" required>{{ recipe.instructions|default('') }}</textarea>
+    </label><br>
+
+    <label>Категория:
+      <select name="category">
+        <option>Суп</option>
+        <option>Десерт</option>
+        <option>Основное</option>
+      </select>
+    </label><br>
+
+    <label>Время приготовления (мин):
+      <input type="number" name="prep_time" value="{{ recipe.prepTime|default('') }}">
+    </label><br>
+
+    <label>Сложность:
+      <input type="radio" name="difficulty" value="Легко"> Легко
+      <input type="radio" name="difficulty" value="Средне"> Средне
+      <input type="radio" name="difficulty" value="Сложно"> Сложно
+    </label><br>
+
+    <label>Дата:
+      <input type="date" name="created_at" value="{{ recipe.createdAt|default(now) }}" required>
+    </label><br>
+
+    <label>Автор:
+      <input type="text" name="author" value="{{ recipe.author|default('') }}" required>
+    </label><br>
+
+    <button type="submit">{% block button_text %}Сохранить{% endblock %}</button>
+  </form>
+{% endblock %}
